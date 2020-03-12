@@ -2,13 +2,8 @@
 <html>
 
 <script>
-  //coloque aqui o endereco de seu repositorio e api no github
-  // este endereco deve terminar e comecar com  "/"
-  var repositorio_nome = "/alerario/teste/"; //modifique somente esta linha
+  var repositorio_nome = "/burekta/utfpr-gerencia-projeto/"; //modifique somente esta linha
 
-
-  //var repositorio_api="https://api.github.com/repos/alerario/teste/"; 
-  //var repositorio = "https://raw.githubusercontent.com/alerario/teste/master/"; 
   var repositorio_api = "https://api.github.com/repos" + repositorio_nome;
   var repositorio = "https://raw.githubusercontent.com" + repositorio_nome + "master/";
 
@@ -335,7 +330,7 @@
     readTextFileDiv("https://raw.githubusercontent.com/alerario/teste/master/processo/autores.txt","autores");
     readTextFileDiv("https://raw.githubusercontent.com/alerario/teste/master/processo/autores.txt","descricao");
     */
-    readTextFile("https://drive.google.com/open?id=1iZVgrN5beadhzb2fjzVUN5IxiGZneNaj", 1);
+    readTextFile(repositorio + "processo/tarefas.csv", 1);
     readTextFile(repositorio + "processo/artefatos.csv", 2);
     readTextFile(repositorio + "processo/papeis.csv", 3);
     readTextFileDiv(repositorio + "processo/grupo.txt", "grupo");
