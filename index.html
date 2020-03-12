@@ -2,7 +2,7 @@
 <html>
 
 <script>
-  var repositorio_nome = "/burekta/utfpr-gerencia-projeto/"; //modifique somente esta linha
+  var repositorio_nome = "/burketa/utfpr-gerencia-projeto/"; //modifique somente esta linha
 
   var repositorio_api = "https://api.github.com/repos" + repositorio_nome;
   var repositorio = "https://raw.githubusercontent.com" + repositorio_nome + "master/";
@@ -330,12 +330,13 @@
     readTextFileDiv("https://raw.githubusercontent.com/alerario/teste/master/processo/autores.txt","autores");
     readTextFileDiv("https://raw.githubusercontent.com/alerario/teste/master/processo/autores.txt","descricao");
     */
-    readTextFile(repositorio + "processo/tarefas.csv", 1);
-    readTextFile(repositorio + "processo/artefatos.csv", 2);
-    readTextFile(repositorio + "processo/papeis.csv", 3);
-    readTextFileDiv(repositorio + "processo/grupo.txt", "grupo");
-    readTextFileDiv(repositorio + "processo/autores.txt", "autores");
-    readTextFileDiv(repositorio + "processo/autores.txt", "descricao");
+    repositorio
+    readTextFile(repositorio + "tarefas.csv", 1);
+    readTextFile(repositorio + "artefatos.csv", 2);
+    readTextFile(repositorio + "papeis.csv", 3);
+    readTextFileDiv(repositorio + "grupo.txt", "grupo");
+    readTextFileDiv(repositorio + "autores.txt", "autores");
+    readTextFileDiv(repositorio + "autores.txt", "descricao");
 
 
 
