@@ -96,3 +96,15 @@ a {
     font-style: italic;
     display: none;
 }
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+#diagram {
+    width: 600px;
+}

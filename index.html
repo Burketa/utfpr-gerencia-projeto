@@ -2,17 +2,18 @@
 <html>
 
 <head>
+  <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
-  <h1> Especificação de processo de Software </h1>
-  <br><br>
+  <h1>Especificação de Processo de Software</h1>
+  <br>
 
-  <div class="collapsible"> Informações
-
-    <div style="float:right;" id=ultimocommit></div>
-    <div style="float:right;" id=ultimatag></div>
+  <div class="collapsible">
+    Informações
+    <div id=ultimocommit class="float-right"></div>
+    <div id=ultimatag class="float-right"></div>
   </div>
 
 
@@ -20,17 +21,21 @@
     <p>
       <div id="descricao"></div>
     </p>
+
     <hr>
-    Criado pelo site: <a href="https://blissful-albattani-29de7a.netlify.com/">
-      https://blissful-albattani-29de7a.netlify.com/ </a>
+
+    Criado pelo site:
+    <a href="https://blissful-albattani-29de7a.netlify.com/">
+      https://blissful-albattani-29de7a.netlify.com/
+    </a>
     <p>
       <div>
-        <div style="float:left;">Grupo:</div>
-        <div style="float:left;" id="grupo"></div>
+        <div class="float-left">Grupo:</div>
+        <div id="grupo" class="float-left"></div>
       </div>
       <br>
       <div>
-        <div style="float:left;">Autores:</div>
+        <div class="float-left">Autores:</div>
         <div id="autores"></div>
       </div>
 
@@ -50,26 +55,25 @@
   </div>
   </hr>
   </hr>
-  <button type="button" onmouseover="zoomout()" id="zmenos">-</button>
-  <button type="button" onmouseover="zoomout()" id="zmenos">-</button>
-  <button type="button" onmouseover="zoomout()" id="zmenos">-</button>
-  <button type="button" onclick="nozoom()">====</button>
-  <button type="button" onmouseover="zoomin()" id="zmais">+</button>
-  <button type="button" onmouseover="zoomin()" id="zmais">+</button>
-  <button type="button" onmouseover="zoomin()" id="zmais">+</button>
+
+  <button id="zmenos" type="button" onmouseover="zoomout()">-</button>
+  <button id="zigual" type="button" onclick="nozoom()">====</button>
+  <button id="zmais" type="button" onmouseover="zoomin()">+</button>
+
   <br>
-  <img src="diagrama.png" id="sky" width="400">
 
+  <img id="diagram" src="diagrama.png">
 
-  <h2> Tarefas </h2>
-  <table id="1"> </table>
+  <h2>Tarefas</h2>
+  <table id="table-tarefas"> </table>
   </p>
 
-  <h2> Artefatos </h2>
-  <table id="2"> </table>
+  <h2>Artefatos</h2>
+  <table id="table-artefatos"> </table>
 
-  <h2> Papeis </h2>
-  <table id="3"> </table>
+  <h2>Papeis</h2>
+  <table id="table-papeis"> </table>
+
   <script src="script.js"></script>
 </body>
 

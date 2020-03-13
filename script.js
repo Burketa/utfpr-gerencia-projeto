@@ -3,6 +3,34 @@ var repositorio_nome = "/burketa/utfpr-gerencia-projeto/"; //modifique somente e
 var repositorio_api = "https://api.github.com/repos" + repositorio_nome;
 var repositorio = "https://raw.githubusercontent.com" + repositorio_nome + "master/";
 
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+}
+
+readTextFile(repositorio + "tarefas.csv", "table-tarefas");
+readTextFile(repositorio + "artefatos.csv", "table-artefatos");
+readTextFile(repositorio + "papeis.csv", "table-papeis");
+readTextFileDiv(repositorio + "grupo.txt", "grupo");
+readTextFileDiv(repositorio + "autores.txt", "autores");
+readTextFileDiv(repositorio + "autores.txt", "descricao");
+
+lerGitHubTag("ultimatag");
+lerGitHubCommit("ultimocommit", 5);
+lerGitHubTag("utag", "utagc");
+lerGitHubCommit("ucommit", 0);
+
+//Funções
 function zoomin() {
     var myImg = document.getElementById("sky");
     var currWidth = myImg.clientWidth;
@@ -20,7 +48,6 @@ function nozoom() {
     var currWidth = myImg.clientWidth;
     myImg.style.width = "500px";
 }
-
 
 function lerGitHubTag(elementID, elementID2) {
     var requestURL = repositorio_api.concat("tags");
@@ -74,21 +101,6 @@ function createTable_file(vetor, elementID) {
     document.getElementById(elementID).innerHTML = content;
 }
 
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-            content.style.display = "none";
-        } else {
-            content.style.display = "block";
-        }
-    });
-}
-
 function parseResult(result) {
     var resultArray = [];
     result.split("\n").forEach(function (row) {
@@ -100,7 +112,6 @@ function parseResult(result) {
     });
     return resultArray;
 }
-
 
 function readTextFile(file, elementID) {
     var rawFile = new XMLHttpRequest();
@@ -117,7 +128,6 @@ function readTextFile(file, elementID) {
     rawFile.send(null);
 }
 
-
 function readTextFileDiv(file, elementID) {
     var rawFile = new XMLHttpRequest();
     rawFile.open("GET", file, true);
@@ -132,26 +142,3 @@ function readTextFileDiv(file, elementID) {
     }
     rawFile.send(null);
 }
-
-/*
-readTextFile("https://raw.githubusercontent.com/alerario/teste/master/processo/tarefas.csv",1);
-readTextFile("https://raw.githubusercontent.com/alerario/teste/master/processo/artefatos.csv",2);
-readTextFile("https://raw.githubusercontent.com/alerario/teste/master/processo/artefatos.csv",3);
-readTextFileDiv("https://raw.githubusercontent.com/alerario/teste/master/processo/grupo.txt","grupo");
-readTextFileDiv("https://raw.githubusercontent.com/alerario/teste/master/processo/autores.txt","autores");
-readTextFileDiv("https://raw.githubusercontent.com/alerario/teste/master/processo/autores.txt","descricao");
-*/
-repositorio
-readTextFile(repositorio + "tarefas.csv", 1);
-readTextFile(repositorio + "artefatos.csv", 2);
-readTextFile(repositorio + "papeis.csv", 3);
-readTextFileDiv(repositorio + "grupo.txt", "grupo");
-readTextFileDiv(repositorio + "autores.txt", "autores");
-readTextFileDiv(repositorio + "autores.txt", "descricao");
-
-
-
-lerGitHubTag("ultimatag");
-lerGitHubCommit("ultimocommit", 5);
-lerGitHubTag("utag", "utagc");
-lerGitHubCommit("ucommit", 0);
