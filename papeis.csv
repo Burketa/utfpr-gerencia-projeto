@@ -1,5 +1,5 @@
 ID,Papel,Descrição
-1,Engenheiro de Requisitos,Faz a elicitação de requisitos junto ao cliente gerando a documentação de requisitos
+1,Engenheiro de Requisitos,Faz a elicitação de requisitos junto ao cliente gerando a documentação de requisitos, além de especificar e validar os requisitos junto com a equipe
 2,Projetista,Além de projetar os casos de uso define junto a equipe as ferramentas e tecnologias a serem utilizadas e determina quais os requisitos que serão desenvolvidos
 3,Desenvolvedores,Implementam os requisitos do programa 
 4,Tester,Após a implementação realiza todos os testes para verificar se determinado requisito foi implementado de acordo com os padrões necessários
