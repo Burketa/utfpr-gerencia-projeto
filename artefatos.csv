@@ -1,8 +1,9 @@
 Artefato ID,Nome,Descrição ,URL
-1,Art1,desc1,<a href="https://raw.githubusercontent.com/alerario/teste/master/processo/index.html"> download </a>
-2,Art2,desc2,<a href="https://raw.githubusercontent.com/alerario/teste/master/processo/Projeto.docx"> download </a>
-3,Art3,desc3,<a href="https://raw.githubusercontent.com/alerario/teste/master/processo/diagrama.png"> download </a>
-4,Art_teste,desc4 fal,<a href="https://raw.githubusercontent.com/alerario/teste/master/processo/Projeto.docx"> download </a>
-4,Art_teste,desc5 fal,<a href="https://raw.githubusercontent.com/alerario/teste/master/processo/Projeto.docx"> download </a>
-5,Art_teste,desc6,<a href="https://raw.githubusercontent.com/alerario/teste/master/processo/Projeto.docx"> download </a>
-6,Art_teste,desc7,<a href="https://raw.githubusercontent.com/alerario/teste/master/processo/Projeto.docx"> download </a>
+1,Lista de Requisitos inicial,Primeira lista de requisitos funcionais e não-funcionais sem a validação,<a href="https://raw.githubusercontent.com/alerario/teste/master/processo/index.html"> download </a>
+2,Lista de Requisitos validada,Lista de requisitos funcionais e não-funcionais após a validação dos requisitos ter sido realizada,<a href="https://raw.githubusercontent.com/alerario/teste/master/processo/Projeto.docx"> download </a>
+3,Diagramas,Diagramas de caso de uso e de classes realizada pelo projetista baseado na lista de requisitos validada,<a href="https://raw.githubusercontent.com/alerario/teste/master/processo/diagrama.png"> download </a>
+5,Projeto do sistema,Projeto com classes/estados/atores e as tecnologias e ferramentas documentado,<a href="https://raw.githubusercontent.com/alerario/teste/master/processo/Projeto.docx"> download </a>
+6,Sublista de requisitos,Sublista com os requisitos selecionados para serem desenvolvidos da lista de requisitos validada,<a href="https://raw.githubusercontent.com/alerario/teste/master/processo/Projeto.docx"> download </a>
+7,Software parcialmente implementado,Implementação dos requisitos do pacote/sublista de requisitos,<a href="https://raw.githubusercontent.com/alerario/teste/master/processo/Projeto.docx"> download </a>
+8,Relatório de teste,Relatório formal descrevendo os casos de teste realizados de cada implementação parcial,<a href="https://raw.githubusercontent.com/alerario/teste/master/processo/Projeto.docx"> download </a>
+9,Software implementado,Software após todos os requisitos terem sido desenvolvidos e testados,<a href="https://raw.githubusercontent.com/alerario/teste/master/processo/Projeto.docx"> download </a>

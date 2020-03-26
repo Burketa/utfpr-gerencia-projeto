@@ -1,7 +1,8 @@
 Tarefa,Entrada,Entrada Opc.,Saída,Saída Opc.,Papel, Guidance
-Elicitar Requisitos,Ideia do Software,,Projeto inicial,,Engenheiro de Requisitos,Fazer uma reuni�o com a equipe e o cliente para entender qual a ideia do software a ser criado
-Projetar Diagramas,art2,,Diagramas de Casos de Uso,artx,p2,documento
-Definir Ferramentas e Tecnologias,art3,,art4,artx,p3,documento
-Definir pacore de requisitos a desenvolver,art3,,art4,artx,p3,documento
-Implementar Funcionalidades,art3,,art4,artx,p3,documento
-Testar Funcionalidades Implementadas,art3,,art4,artx,p3,documento
+Elicitar Requisitos,Ideia do Software,,Lista de Requisitos Funcionais e Não-funcionais,,Engenheiro de Requisitos,Fazer uma reunião com a equipe e o cliente para entender qual a ideia do software a ser criado
+Especificar e Validar Requisitos,Lista de Requisitos inicial,,Lista de Requisitos validada,,Engenheiro de Requisitos,Reunir a equipe para realizar a especificação e validação de cada requisito
+Projetar Diagramas,Lista de Requisitos Funcionais e Não-Funcionais validada,,Diagramas de Casos de Uso e de Classes,,Projetista,Realizar o diagrama de caso de uso e de classes baseado na lista de requisitos validada
+Definir Ferramentas e Tecnologias,Diagramas e Lista de Requisitos Validada,,Projeto do sistema definido,,Projetista,Reunir a equipe para relizar a discussão de quais ferramentas e tecnologias serão utilizadas baseado nos diagramas e na lista de requisitos
+Definir pacote de requisitos a desenvolver,Lista de requisitos validada,,Sublista de Requisitos,,Projetista,Escolher os requisitos para formar a sublista de requisitos a ser implementada
+Implementar Funcionalidades,Sublista de requisitos,,Software parcialmente implementado,,Desenvolvedores,Realizar a implementação da sublista de requisitos validada
+Testar Funcionalidades Implementadas,Software parcialmente implementado,,Relatório de teste,,Tester,Testar os requisitos implementados da sublista de requistos validada e gerar o relatório de teste
